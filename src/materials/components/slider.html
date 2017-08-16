@@ -1,0 +1,54 @@
+<div class="donation-slider">
+  <label for="event_donation_percentage">Donation percentage</label>
+  <input min="0.0" max="1.0" step="0.01" list="tickmarks" type="range" value="0.00" name="event[donation_percentage]" id="event_donation_percentage">
+  <datalist id="tickmarks">
+      <option>0</option>
+      <option>0.25</option>
+      <option>0.50</option>
+      <option>0.75</option>
+      <option>1</option>
+  </datalist>
+</div>
+
+<script>
+	function rangeColor(input) {
+	  var wrp = document.createElement('div');
+    preBar = document.createElement('p');
+    preWord = document.createElement('p')
+    preWord.style.paddingTop = '10px'
+    min = parseFloat(input.min, 10);
+    max = parseFloat(input.max, 10);
+    range = max - min;
+    getVal = function() {
+      var w = parseFloat(input.clientWidth, 10),
+        t = ~~(w * (parseFloat(input.value, 10) - min) / range);
+      return t;
+    };
+	  wrp.className = 'barCnt';
+	  preBar.className = 'preBar';
+	  preWord.className = 'preWord';
+
+	  input.className = input.className.length ? (input.className + ' colorized') : 'colorized';
+	  input.parentNode.replaceChild(wrp, input);
+
+	  wrp.appendChild(input);
+	  wrp.appendChild(preBar);
+	  wrp.appendChild(preWord)
+
+
+
+	  input.addEventListener('input', function() {
+
+	    preBar.style.width = getVal() + 'px';
+	    preWord.style.marginLeft = (getVal()) + 'px'
+	    preWord.innerHTML = parseInt(input.value * 100) + '%'
+	  });
+
+	  preBar.style.width = getVal() + 'px';
+	  preWord.style.marginLeft = (getVal()) + 'px'
+	  preWord.innerHTML = parseInt(input.value * 100) + '%'
+	}
+
+
+	rangeColor(document.getElementById('event_donation_percentage'))
+</script>
