@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="22px" viewBox="0 0 28 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="V2-TOP-NAVIGATION-PROGRESS" transform="translate(-969.000000, -130.000000)" stroke="#3D3E3C">
+            <g id="Group-14" transform="translate(1.000000, 40.000000)">
+                <g id="Group-7" transform="translate(401.000000, 87.267081)">
+                    <g id="Group-2" transform="translate(557.428403, 0.000000)">
+                        <g id="Group-4" transform="translate(10.000000, 3.000000)">
+                            <path d="M10.9860558,19.7708422 C10.9860558,19.0595478 10.6682669,18.382405 10.1010438,17.9407901 C9.23401992,17.2648248 7.73021912,16.4310559 5.58964143,16.4310559 C3.44906375,16.4310559 1.94526295,17.2648248 1.07823904,17.9407901 C0.511015936,18.382405 0.193227092,19.0595478 0.193227092,19.7708422 L0.193227092,21.1416149 L10.9860558,21.1416149 L10.9860558,19.7708422 Z" id="Shape"></path>
+                            <ellipse id="Oval" cx="5.58964143" cy="9.95403727" rx="2.99800797" ry="2.94409938"></ellipse>
+                            <path d="M26.5756972,19.7708422 C26.5756972,19.0595478 26.2579084,18.382405 25.6906853,17.9407901 C24.8236614,17.2648248 23.3198606,16.4310559 21.1792829,16.4310559 C19.0387052,16.4310559 17.5349044,17.2648248 16.6678805,17.9407901 C16.1006574,18.382405 15.7828685,19.0595478 15.7828685,19.7708422 L15.7828685,21.1416149 L26.5756972,21.1416149 L26.5756972,19.7708422 Z" id="Shape"></path>
+                            <ellipse id="Oval" cx="21.1792829" cy="9.95403727" rx="2.99800797" ry="2.94409938"></ellipse>
+                            <path d="M9.78685259,0.925465839 L16.9820717,0.925465839" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

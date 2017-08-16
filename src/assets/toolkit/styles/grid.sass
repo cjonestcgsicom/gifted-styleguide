@@ -1,0 +1,150 @@
+html
+	:box-sizing border-box
+*, *:before, *:after
+	:box-sizing inherit
+
+//grid columns
+$grid-base: 40
+
+=make-column($columns, $grid: $grid-base)
+	:box-sizing border-box
+	:width percentage($columns / $grid)
+
+=make-gutter($left-gutter: 0, $right-gutter: 0, $grid: $grid-base)
+	:margin-left percentage($left-gutter / $grid)
+	:margin-right percentage($right-gutter / $grid)
+
+//adaptive screen sizes
+%make-adaptive
+  @media screen and (min-width: 1170px)
+    // XL
+    :max-width 1146px
+    :width 85%
+    :margin
+      :left 12px
+      :right 12px
+  @media screen and (min-width: 960px) and (max-width: 1169px)
+    // LG
+    :width 936px
+    :margin
+      :left 12px
+      :right 12px
+  @media screen and (min-width: 768px) and (max-width: 959px)
+    // MD
+    :width 744px
+    :margin
+      :left 12px
+      :right 12px
+  @media screen and (min-width: 500px) and (max-width: 767px)
+    // SM
+    :width 480px
+    :margin
+      :left 12px
+      :right 12px
+  @media screen and (max-width: 499px)
+    // XS
+    :width auto
+    :margin-left 8px
+    :margin-right 8px
+
+//break poitn display mixin
+=display-for($size: false)
+	@each $screen in $size
+		@if $screen == xl
+			@media screen and (min-width: 1170px)
+				@content
+		@else if $screen == lg
+			@media screen and (min-width: 960px) and (max-width: 1169px)
+				@content
+		@if $screen == md
+			@media screen and (min-width: 768px) and (max-width: 959px)
+				@content
+		@else if $screen == sm
+			@media screen and (min-width: 500px) and (max-width: 767px)
+				@content
+		@else if $screen == xs
+			@media screen and (max-width: 499px)
+				@content
+
+//container wrapper
+.wrapper
+	:width 90%
+	:max-width 1146px
+	:margin 0 auto
+	:box-sizing border-box
+	:position relative
+	+display-for(xl lg md sm)
+		:margin 0 auto
+	+display-for(xs)
+		// :width 96%
+		:margin 0
+		:padding 0 12px
+	&--flex
+		:display flex
+		&-wrap
+			:align-items stretch
+			:flex-wrap wrap
+.flex-even
+	div
+		:width calc(50% - 6px)
+	div:nth-of-type(2n + 1)
+		:margin-right 12px
+		
+.wrapper, .wrapper--flex
+	.col
+		&--full
+			+make-column(40)
+		&--two
+			+make-column(20)
+			+display-for(sm xs)
+				+make-column(40)
+		&--three
+			+make-column(13.33)
+			+display-for(sm)
+				+make-column(20)
+			+display-for(xs)
+				+make-column(40)
+		&--four
+			+make-column(10)
+			+display-for(sm)
+				+make-column(20)
+			+display-for(xs)
+				+make-column(40)
+		&--five
+			+make-column(8)
+			+display-for(md)
+				+make-column(13.33)
+			+display-for(sm)
+				+make-column(13.33)
+			+display-for(xs)
+				+make-column(20)
+		&--six
+			+make-column(6.66)
+			+display-for(md)
+				+make-column(13.33)
+			+display-for(sm)
+				+make-column(13.33)
+			+display-for(xs)
+				+make-column(20)
+		 &--seven
+		 	+make-column(5.71)
+		 	+display-for(md)
+		 		+make-column(13.33)
+		 	+display-for(sm)
+		 		+make-column(13.33)
+		 	+display-for(xs)
+		 		+make-column(20)
+		&--threefourths
+			+make-column(30)
+			+display-for(sm)
+				+make-column(30)
+			+display-for(xs)
+				+make-column(40)
+				+make-column(40)
+		&--twothirds
+			+make-column(26.66)
+			+display-for(sm)
+				+make-column(20)
+			+display-for(xs)
+				+make-column(40)
+				+make-column(40)

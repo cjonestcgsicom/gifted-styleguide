@@ -1,0 +1,8 @@
+colors:
+  primary:
+    Pink: "#C99BA3"
+    Dark: "#3D3E3C"
+  secondary:
+    Black: '#000'
+    White: "#fff"
+    Border-gray: "#9D9D9D"

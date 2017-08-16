@@ -1,0 +1,102 @@
+// EVENT FLOW
+nav.event-flow
+	:width 80%
+	:max-width 665px
+	:margin 0 auto
+	.col--seven
+		:align-self flex-end
+		:padding 0 10px
+		:position relative
+		&:after
+			:content '>'
+			:position absolute
+			:top 50%
+			:transform translateY(-50%)
+			:left 95%
+		&:last-child
+			&:after
+				:content ''
+	a 
+		:text-decoration none
+		:color $font-black
+		&:hover
+			:color $pink
+			.event-icon 
+				:stroke $pink
+				:stroke-width 1.7
+	p 
+		:text-transform uppercase
+		:text-align center
+		:font-size 1rem
+	.event-svg 
+		
+	.event-icon-svg
+		:display block
+		:margin 0 auto
+
+// FOOTER
+nav.footer
+	:background-color $black
+	:padding 40px 0
+	.footer-wrapper
+		+display-for(xs sm)
+			:flex-direction column
+	.social-icons
+		:text-align center
+		:width 180px
+		+display-for(xs sm)
+			:text-align left
+
+		.fa 
+			:font-size 15px
+			:margin-right 15px
+			:margin-top 10px
+			:color $pink
+	.col--four
+		:align-self center
+		+display-for(xs sm)
+			:align-self flex-start
+	.col--threefourths
+		+display-for(xs sm)
+			:display flex
+	.list-1
+		:justify-content space-between
+		a 
+			+display-for(xs sm)
+				:font-size 1.2rem
+	.list-2
+		:justify-content flex-end
+		li 
+			&:first-of-type
+				:margin-right 60px
+			a 
+				:font-size 1.2rem
+	.list-1, .list-2 
+		+display-for(xs sm)
+			+make-column(20)
+			:flex-direction column
+			:justify-content flex-start
+			:padding-left 0
+			:line-height 1.8
+	.small-only 
+		:display none
+		+display-for(xs sm)
+			:display block
+	.big-only
+		+display-for(xs sm)
+			:display none
+	img 
+		+display-for(xs sm)
+			:width 78px
+	ul 
+		:list-style none
+	a 
+		:text-decoration none
+		:color white
+		:text-transform uppercase
+		:font-size 1.4rem
+	hr 
+		:border-top 1px solid black;
+		:margin-left 40px
+		+display-for(xs sm)
+			:display none

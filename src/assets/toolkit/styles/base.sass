@@ -1,0 +1,26 @@
+body
+	:color $font-black
+.wrapper 
+	:width 80%
+	:max-width 1024px
+	:margin 0 auto
+.wrapper--flex
+	:display flex	
+.title 
+	:font-size 1.8rem
+	:color $pink
+	:position relative
+	:text-align center
+	:text-transform uppercase
+	span 
+		:background white
+		:padding 0 50px
+	&:after
+		:content ''
+		:border-bottom solid 2px $pink
+		:width 100%
+		:position absolute
+		:top 50%
+		:transform translateY(-50%)
+		:left 0
+		:z-index -1
