@@ -78,5 +78,86 @@
 	:pointer-events none
 
 
+.total-gifted	
+	:border 2.5px solid $pink
+	:max-width 585px
+	:padding 15px 50px 30px 50px
+	+display-for(sm xs)
+		:border none
+	.total, .total-charity, .total-host 
+		:text-align center
+		h3 
+			:font-size 1.4rem
+			:text-transform uppercase
+			:margin 0
+			+display-for(sm xs)
+				:font-size 1rem
+		p 
+			:font-size 3.6rem
+			:color $pink
+			:margin 12px 0 5px 0
+			+display-for(sm xs)
+				:font-size 2rem
+	.total-charity
+		:margin-right 10%
+		+display-for(sm xs)
+			:margin 0
+	.total-charity, .total-host, .total
+		+display-for(sm xs)
+			:border 1px solid $pink
+			:padding 18px 30px
+	.total 
+		p 
+			&:before 
+				:content url('../../../assets/toolkit/images/icons/total_left_arrow.svg')
+				:margin-right 20px
+				+display-for(sm xs)
+					:display none
+			&:after
+				:content url('../../../assets/toolkit/images/icons/total_right_arrow.svg') 
+				:margin-left 20px
+				+display-for(sm xs)
+					:display none
+
+.panel 
+	.panel-header	
+		:background-color $panel-gray
+		:padding 20px 12px 24px 12px
+		h3 
+			:font-size 1.6rem
+	.panel-body
+		:padding 30px 50px
+		:border 3px solid $panel-gray
+
+.how-it-works
+	:text-align center
+	:justify-content space-between
+	h3 
+		:font-size 1.8rem
+		:font-weight normal
+		:margin 30px 0 40px 0
+	p 
+		:font-size 1.4rem
+
+.benefits-list
+	:font-size 1.4rem
+	.col--two
+		:padding-right 30px
+		&:last-of-type
+			:padding-right 0
+	h3 
+		:text-transform uppercase
+	ul 
+		:list-style none
+		:padding 0
+		li 
+			:padding-left 68px
+			:position relative
+			:margin-bottom 50px
+			&:before 
+				:content url('../../../assets/toolkit/images/icons/heart_list.svg')
+				:position absolute
+				:left 0
+
 
 

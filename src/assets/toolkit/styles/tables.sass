@@ -1,0 +1,56 @@
+.table
+	&--event-dashboard
+		.small-only
+			+display-for(md lg xl)
+				:display none
+		.big-only
+			+display-for(xs sm)
+				:display none
+		ul
+			:list-style none
+			:margin 0
+			:font-weight normal
+			:padding 0
+			&.flex 
+				:font-weight bold
+				:display flex
+				:justify-content space-between
+				:-webkit-padding-start 0
+				li 
+					:flex 1 1 20em
+					&.action-list
+						:flex 4 60em
+			&.menu
+				p
+					:margin-bottom 20px
+			&.list
+				li  
+					:margin-bottom 40px
+			&.actions
+				:font-weight normal
+				:font-size 1rem
+				:align-items flex-end
+				:text-align center
+		p 
+			:margin 0
+		p.action 
+			:text-align center
+	&--heading
+		:background $black
+		:color white
+		:display flex
+		:padding 22px
+	&--title
+		:width 40%
+	&--options
+		:width 60%
+	&--sub-heading 
+		:font-size 1.2rem
+		:padding 20px 0
+.unsent
+.attending
+	:color $attending
+.no-reply
+	:color $no-reply
+.declined
+	:color $declined

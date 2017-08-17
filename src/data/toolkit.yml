@@ -6,3 +6,7 @@ colors:
     Black: '#000'
     White: "#fff"
     Border-gray: "#9D9D9D"
+    Panel-gray: '#F6F6F6'
+    Attending: '#3BC083'
+    No-reply: '#FFAE00'
+    Declined: '#EA3F3F'

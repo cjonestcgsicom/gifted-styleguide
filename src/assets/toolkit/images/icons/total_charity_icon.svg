@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="42px" viewBox="0 0 48 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Cash Out</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cash-Out" transform="translate(-201.000000, -226.000000)">
+            <g id="Group-19" transform="translate(67.000000, 48.000000)">
+                <path d="M1.25,1.25 L1.25,236.75 L583.75,236.75 L583.75,1.25 L1.25,1.25 Z" id="Rectangle-6" stroke="#C99BA3" stroke-width="2.5"></path>
+                <g id="Group-2" transform="translate(99.000000, 112.000000)" fill-rule="nonzero" fill="#3D3E3C">
+                    <path d="M63,74 C61.1,74 59.3,74.7892617 58,76.0718121 C56.7,74.7892617 54.9,74 53,74 C49.1,74 46,77.0583893 46,80.9060403 C46,87.2201342 56.9,96.0993289 57.4,96.4939597 C57.6,96.6912752 57.8,96.6912752 58,96.6912752 C58.2,96.6912752 58.4,96.5926174 58.6,96.4939597 C59.1,96.0993289 70,87.2201342 70,80.9060403 C70,77.0583893 66.9,74 63,74 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

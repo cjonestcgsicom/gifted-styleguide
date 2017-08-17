@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="75px" viewBox="0 0 80 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>users-64px-outline-2_b-love</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="How-It-Works_Invite" transform="translate(1.000000, 1.000000)" stroke-width="2">
+            <g id="users-64px-outline-2_b-love">
+                <path d="M52.1079,2.58628571 C48.3132,-1.35310714 41.9796,-0.709142857 39,3.94982143 C36.0178,-0.714357143 29.6829,-1.34919643 25.8921,2.58498214 C22.5693,6.03292857 22.5693,11.62525 25.8921,15.0731964 L38.9987,28.6785714 L52.1079,15.0745 C55.4307,11.62525 55.4307,6.03423214 52.1079,2.58628571 Z" id="Shape" stroke="#C99BA3"></path>
+                <ellipse id="Oval" stroke="#282828" cx="62.4" cy="41.7142857" rx="7.8" ry="7.82142857"></ellipse>
+                <ellipse id="Oval" stroke="#282828" cx="15.6" cy="41.7142857" rx="7.8" ry="7.82142857"></ellipse>
+                <path d="M31.2,73 L31.2,65.2241964 C31.2,63.373125 30.2315,61.6706607 28.6429,60.7281786 C26.1144,59.2277679 21.7308,57.3571429 15.6,57.3571429 C9.3899,57.3571429 5.0349,59.2160357 2.5324,60.7138393 C0.9568,61.657625 0,63.354875 0,65.1955179 L0,73 L31.2,73 Z" id="Shape" stroke="#282828"></path>
+                <path d="M78,73 L78,65.2241964 C78,63.373125 77.0315,61.6706607 75.4429,60.7281786 C72.9144,59.2277679 68.5308,57.3571429 62.4,57.3571429 C56.1899,57.3571429 51.8349,59.2160357 49.3324,60.7138393 C47.7568,61.657625 46.8,63.354875 46.8,65.1955179 L46.8,73 L78,73 Z" id="Shape" stroke="#282828"></path>
+            </g>
+        </g>
+    </g>
+</svg>
