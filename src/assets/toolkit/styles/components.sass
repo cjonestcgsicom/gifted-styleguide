@@ -3,18 +3,37 @@
 	:font-size 1.8rem
 	:padding 20px 56px
 	:text-transform uppercase
+	:cursor pointer
+	:transition all 0.3s
 .button--dark
 	:background-color $font-black
 	:border 1px solid $font-black
 	:color white
+	&:hover
+		:color $font-black
+		:background-color white
 .button--light
 	:background-color white
 	:border 1px solid white
 	:color $font-black
+	&:hover
+		:background-color $font-black
+		:border 1px solid $font-black
+		:color white
 .button--pink
 	:background-color $pink 
 	:border 1px solid $pink 
 	:color white
+	&:hover
+		:background-color white
+		:color $pink
+.button--pink-inverted
+	:background-color white	
+	:border 1px solid $pink
+	:color $pink
+	&:hover
+		:background-color $pink
+		:color white
 
 .donation-slider
 	input[type=range].colorized

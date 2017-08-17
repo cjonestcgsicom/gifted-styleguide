@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="25px" viewBox="0 0 20 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Top-Navigation_Progress" transform="translate(-1277.000000, -44.000000)" fill-rule="nonzero" fill="#C99BA3">
+            <g id="Group-14" transform="translate(1.000000, 40.000000)">
+                <g id="users-24px-glyph_single-02" transform="translate(1276.000000, 4.832298)">
+                    <g id="Group-4">
+                        <path d="M13.461,13.7617019 C12.424,14.359354 11.258,14.7204969 10,14.7204969 C8.742,14.7204969 7.576,14.359354 6.539,13.7617019 C2.894,13.9962484 0,16.9737143 0,20.6086957 L0,22.3064596 L0.695,22.5253043 C0.829,22.5665217 4.038,23.552795 10,23.552795 C15.962,23.552795 19.171,22.5665217 19.305,22.5253043 L20,22.3064596 L20,20.6086957 C20,16.9737143 17.106,13.9962484 13.461,13.7617019 Z" id="Shape"></path>
+                        <path d="M10,12.757764 C13.379,12.757764 16,9.06488199 16,5.88819876 C16,2.64085714 13.309,0 10,0 C6.691,0 4,2.64085714 4,5.88819876 C4,9.06488199 6.621,12.757764 10,12.757764 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
