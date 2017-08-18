@@ -129,9 +129,32 @@
 		:padding 30px 50px
 		:border 3px solid $panel-gray
 
+.header-image
+	:background-image url(../../../assets/toolkit/images/header_image.jpg)
+	:background-repeat no-repeat
+	:background-size cover
+	:background-position center
+	:padding 120px 0 24px 0
+	p 
+		:width 420px
+		:font-size 2.8rem
+		:line-height 1.5
+		:padding-left 120px
+		span 
+			:font-style italic
+	.choices
+		:text-align center
+		:padding 100px 0 24px 0
+		a 
+			:margin-right 100px
+			&:last-of-type 
+				:margin-right 0
+
 .how-it-works
 	:text-align center
 	:justify-content space-between
+	:margin-top 70px 
+	:margin-bottom 130px 
 	h3 
 		:font-size 1.8rem
 		:font-weight normal
@@ -141,6 +164,8 @@
 
 .benefits-list
 	:font-size 1.4rem
+	:margin-top 100px
+	:margin-bottom 130px
 	.col--two
 		:padding-right 30px
 		&:last-of-type
@@ -158,6 +183,18 @@
 				:content url('../../../assets/toolkit/images/icons/heart_list.svg')
 				:position absolute
 				:left 0
+#giveback
+	h3 
+		:margin-top 24px 
+	p 
+		:margin 100px 25% 120px 25% 
+		span 
+			:font-weight bold
 
-
-
+.charity-grid
+	img 	
+		:max-width 100%
+		:max-height 100%
+		:padding 40px
+	.col--four
+		:align-self center

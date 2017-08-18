@@ -1,0 +1,9 @@
+<div class="header-image">
+	<p>Every Milestone Is An Opportunity To Make A <span>Difference</span></p>
+	<div class="choices">
+		<a href="#" class="button button--light">Find an event</a>
+		<a href="#" class="button button--dark">Create an event</a>
+		<a href="#" class="button button--light">Manage an event</a>
+	</div>
+</div>		
+
