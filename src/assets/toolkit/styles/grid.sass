@@ -98,8 +98,24 @@ $grid-base: 40
 			+make-column(20)
 			+display-for(sm xs)
 				+make-column(40)
+		&--two-margin
+			+display-for(xl lg md)
+				:width calc(50% - 85px)
+				// &:nth-of-type(2n + 1)
+				// 	:margin-right 0
+			+display-for(sm xs)
+				+make-column(40)
 		&--three
 			+make-column(13.33)
+			+display-for(sm)
+				+make-column(20)
+			+display-for(xs)
+				+make-column(40)
+		&--three-margin
+			+display-for(xl lg md)
+				:width calc(33.3% - 40px)
+				&:nth-of-type(3n + 1)
+					:margin-right 0
 			+display-for(sm)
 				+make-column(20)
 			+display-for(xs)
@@ -157,3 +173,22 @@ $grid-base: 40
 			+display-for(xs)
 				+make-column(40)
 				+make-column(40)
+
+
+.invitation-grid
+	:align-items center
+	:justify-content space-between
+	:text-align center
+	.col--three-margin
+		:margin-top 20px
+		:margin-bottom 20px
+	img 
+		:max-width 100%
+		:max-height 320px
+		:text-align center
+	.selected
+		:border 6px solid black
+		:padding 20px
+
+
+

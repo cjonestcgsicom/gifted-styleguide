@@ -2,8 +2,17 @@ input, textarea
 	:border 1px solid $border-gray
 	:font-size 1.4rem
 	:padding 12px
+	:width 100%
+.field
+	:margin-bottom 20px
+input[type="submit"]
+	:width initial
+input[type="checkbox"]
+	:width initial
 label
 	:font-size 1.4rem
+	:margin-bottom 8px
+	:display inline-block
 select
 	:-webkit-appearance none
 	:font-size 14px
@@ -11,3 +20,68 @@ select
 	:border-radius 0
 	:padding 15px 18px
 	:background transparent
+
+.event-submit
+	:margin-top 150px
+	:margin-bottom 50px
+	:text-align center
+	
+.edit_event
+	.wrapper--flex
+		:justify-content space-between
+
+.form-section
+	:margin-top 40px
+	:margin-bottom 40px
+
+.choose-charity
+	.search-form
+		:align-items flex-end	
+		:text-align center
+		.field
+			:margin-bottom 0
+			select 
+				:padding 12px 18px
+	a.learn-more
+		:display block
+		:color $pink
+		:font 1.4rem
+		:font-weight bold
+		:text-align left
+	.charity-logo-container
+		:width 170px
+		:height 170px
+		:border 1px solid $border-gray
+		:display flex 
+		:align-items center
+		:justify-content center
+	.event-charity-logo
+		:max-width 170px
+		:max-height 170px
+	.selected
+		:border 6px solid black
+		:padding 20px
+
+
+.personalize-invite
+	.wrapper--flex
+	 	:justify-content center
+	 	:align-items flex-end
+	#area
+		:margin 0 auto
+		:margin-bottom 25px
+		:margin-top 50px
+	.col--three
+		:text-align center
+
+.registry-form
+	:text-align center
+	.date 
+		:color $pink
+	.support 
+		:font-weight bold
+	.choose-file
+		img 
+			:max-width 200px
+	.support-logo 
+		:max-width 120px
