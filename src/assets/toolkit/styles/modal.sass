@@ -4,7 +4,7 @@
   padding: 40px 60px
   position: fixed
   z-index: 1000
-  color: blue
+  color: $font-black
   .close
     position: absolute
     top: 20px
@@ -33,9 +33,43 @@
     right: 20px
     font-size: 22px
     cursor: pointer
-.send-invite-panel, .send-message-panel
+.send-invite-panel, .send-message-panel, .send-thankyou-panel
   .button 
     :padding 16px 42px
     :display inline-block
     :font-size 1.6rem
     :margin-top 30px
+
+.guest-profile-modal
+  :top 50%
+  :max-width 600px
+  label 
+    :width 20%
+    :text-transform uppercase
+    :font-weight bold
+  input, textarea 
+    :width 60%
+  img 
+    :padding-left 10px
+  .guest-profile-wrapper
+    :padding-left 10px
+    :padding-right 40px
+    :padding-top 50px
+  .actions 
+    :text-align center
+    .button
+      :font-size 1.6rem
+      :width initial
+      :padding 10px 100px
+  .short-input
+    :width 30%
+  .long-input 
+    :width 60%
+    :display inline-block
+    :border 1px solid $border-gray
+    :padding 12px 
+    :font-size 1.4rem
+    :margin 0
+.add-contact-modal
+  :max-width 977px
+  :border 1px solid $border-gray
