@@ -1,0 +1,66 @@
+.sign-up	
+	:border 1px solid grey
+	:text-align center
+	:max-width 430px
+	:padding 30px 55px 20px 55px
+	// :padding 30px 55px 20px 55px
+	img 
+		:max-width 167px
+		:margin-bottom 50px
+	input 
+		:margin-bottom 10px
+	input[type="checkbox"]
+		:text-align left
+	.button 
+		:display block
+		:font-size 1.2rem
+	.button--light 
+			:border 1px solid $border-gray
+	.sign-up--social
+		:margin 40px auto
+		:font-size 1.2rem
+		:position relative
+		:text-align center
+		span 
+			:background white
+			:padding 0 10px
+			:font-weight normal
+			:letter-spacing 1.2px
+		&:after
+			:content ''
+			:border-bottom solid 1px $border-gray
+			:width 100%
+			:position absolute
+			:top 50%
+			:transform translateY(-50%)
+			:left 0
+			:z-index -1 
+	.google
+		:margin-bottom 10px
+		i 
+			:color #D32423
+	.google, .facebook
+		i 
+			:margin-right 40px
+			:font-size 1.8rem
+	.facebook
+		i
+			:color #0084FF
+	.sign-up-checkbox
+		:text-align left
+	.have-account 
+		a 
+			:color $font-black
+			:transition all 0.3s
+			&:hover
+				:color $pink
+.profile-form
+	:margin-top 50px
+	:margin-bottom 60px
+	:border 1px solid $border-gray
+	:padding 30px
+	:max-width 750px
+	.wrapper--flex
+		:justify-content space-between
+	.col--two
+		:width 49%

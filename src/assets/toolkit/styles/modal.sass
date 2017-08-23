@@ -1,0 +1,41 @@
+.modal
+  width: 900px
+  background: white
+  padding: 40px 60px
+  position: fixed
+  z-index: 1000
+  color: blue
+  .close
+    position: absolute
+    top: 20px
+    right: 20px
+    font-size: 22px
+    cursor: pointer
+
+.modal--overlay
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 100
+  background-color: rgba(0, 0, 0, 0.5)
+
+.popup 
+  :max-width 537px
+  :position fixed
+  :bottom 50px
+  :right 120px
+  :transition 0.3s
+  .close
+    position: absolute
+    top: 20px
+    right: 20px
+    font-size: 22px
+    cursor: pointer
+.send-invite-panel, .send-message-panel
+  .button 
+    :padding 16px 42px
+    :display inline-block
+    :font-size 1.6rem
+    :margin-top 30px

@@ -3,6 +3,8 @@
 // EVENT FLOW
 hr.event-line
 	:border-top 1px solid white
+hr.event-line.bottom 
+	:margin-bottom 45px
 nav.event-flow
 	:width 80%
 	:max-width 720px
@@ -27,6 +29,12 @@ nav.event-flow
 		&:hover
 			:color $pink
 			.event-icon 
+				:stroke $pink
+				:stroke-width 1.7
+	.menu-hl
+		p 
+			:color $pink
+		.event-icon 
 				:stroke $pink
 				:stroke-width 1.7
 	p 
@@ -201,4 +209,6 @@ nav.main-page
 			:padding-bottom 8px
 			:border-bottom 4px solid white
 			&:hover
-				:border-bottom 4px solid $pink 
+				:border-bottom 4px solid $pink
+		a 
+			:color $font-black 
