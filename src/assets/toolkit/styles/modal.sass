@@ -1,5 +1,6 @@
 .modal
-  width: 900px
+  :max-width 900px
+  :width 75%
   background: white
   padding: 40px 60px
   position: fixed
@@ -42,7 +43,7 @@
 
 .guest-profile-modal
   :top 50%
-  :max-width 600px
+  :max-width 45%
   label 
     :width 20%
     :text-transform uppercase
@@ -70,6 +71,77 @@
     :padding 12px 
     :font-size 1.4rem
     :margin 0
-.add-contact-modal
+
+.add-guest-modal
   :max-width 977px
   :border 1px solid $border-gray
+  h2 
+    :margin-top 25px
+  .button 
+    :padding 16px 42px
+    :display block
+    :font-size 1.6rem
+    :margin 30px auto
+  .contact-blurb
+    :margin-top 30px
+    :margin-bottom 50px
+    :padding 0 40px
+    :text-align center
+    :font-size 1.4rem
+    a 
+      :color blue
+  input[placeholder] 
+    :color $panel-gray
+  .gmail-contact
+    :text-align center
+    img 
+      :margin 60px auto
+      :margin-top 10px
+  .import-contacts
+    :text-align center
+    input 
+      :border none
+  .upload 
+    :margin 0 auto
+    :width 30%
+    &::-webkit-file-upload-button
+      :visibility hidden
+    &:before
+      :content 'upload csv'
+      :display inline-block
+      :border 1px solid $pink
+      :padding 5px 8px
+      :outline none
+      :white-space nowrap
+      :-webkit-user-select none
+      :cursor pointer
+  .address-book-contacts
+    .contact-label
+      :display flex
+      :align-items center
+      :margin 0
+      :font-size 1.2rem
+      .contact-name 
+        :width 200px
+      input[type='checkbox']
+        :width 215px
+      p 
+        :margin 0
+  .contact 
+    :border-bottom 1px solid #EAECEB
+    :padding 18px
+  .scroll-area
+    :height 200px
+    :overflow scroll
+  .contact-headings
+    :display flex 
+    :font-weight bold
+    :padding 10px
+    .all 
+      :width 215px 
+    .name 
+      :width 200px
+.add-guest-modal
+  :max-width 977px
+  :height 700px
+  :width 82%

@@ -132,3 +132,13 @@ select
 			:max-width 200px
 	.support-logo 
 		:max-width 120px
+.new_user_contact
+	:width 75%
+	:margin 0 auto
+	.wrapper--flex
+		:justify-content space-between
+	.col--two 
+		+display-for(xl lg md)
+				:width calc(50% - 15px)
+				&:nth-of-type(2n + 1)
+					:margin-right 0
