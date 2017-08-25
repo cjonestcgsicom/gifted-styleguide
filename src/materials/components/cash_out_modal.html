@@ -1,0 +1,47 @@
+<div class="cash-out-modal">
+	<h2 class="title"><span>Cash Out</span></h2>
+	<div class="total-gifted">
+		<div class="total">
+			<h3>Total Gifted</h3>
+			<p>$12,000</p>
+			<img src="assets/toolkit/images/icons/total_gifted_icon.svg" alt="">
+		</div>
+		<div class="wrapper--flex">
+			<div class="total-charity col--two">
+				<h3>total Charity</h3>
+				<p>$2,000</p>
+				<img src="assets/toolkit/images/icons/total_charity_icon.svg" alt="">
+			</div>
+			<div class="total-host col--two">
+				<h3>total host</h3>
+				<p>$10,000</p>
+				<img src="assets/toolkit/images/icons/total_host_icon.svg" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="donation-selection">
+		<p>You have selected <strong>10%</strong> to go to <strong>Charity Name</strong></p>
+		<div class="donation-slider">
+		  <label for="event_donation_percentage">Donation percentage</label>
+		  <input min="0.0" max="1.0" step="0.01" list="tickmarks" type="range" value="0.00" name="event[donation_percentage]" id="event_donation_percentage">
+		  <datalist id="tickmarks">
+		      <option>0</option>
+		      <option>0.25</option>
+		      <option>0.50</option>
+		      <option>0.75</option>
+		      <option>1</option>
+		  </datalist>
+		</div>
+	</div>
+	<div class="payment-method">
+		<p>Payment Information</p>
+		<div class="payment-method-selection">		
+			<input type="radio" name="payment_method">
+			<label for="">Payout Through PayPal</label>
+			<input type="radio" name="payment_method">
+			<label for="">Payout Through Mailed Cheque</label>
+			<input type="radio" name="payment_method">
+			<label for="">Payout Through E-Transfer</label>
+		</div>
+	</div>
+</div>
