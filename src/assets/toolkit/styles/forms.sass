@@ -170,9 +170,19 @@ select
 			:display block
 			:text-align center
 			:text-transform uppercase
-			:background $inactive-gray
-			:color $inactive-gray-font
 			:padding 12px 0
-		input:checked + label 
-			:background $pink
-			:color white			
+		.col--two	
+			&:last-of-type
+				label 
+					:background $inactive-gray
+					:color $inactive-gray-font
+					:border 2px solid $inactive-gray
+			&:first-of-type
+				label 
+					:background $pink
+					:color white	
+					:border 2px solid $pink	
+			input:checked + label 
+				:background white
+				:color $inactive-gray-font		
+			
