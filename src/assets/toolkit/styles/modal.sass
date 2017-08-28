@@ -170,12 +170,26 @@
       :width 100% 
       :font-size 1.4rem
       :text-align center 
-  .payment-method-partial
-    form
+  .payment-method-option
+    >div
       >div 
-        &:first-of-type
+        :margin-right 10px
+        &:last-of-type
           :margin-right 10px
   .payment-method-full
     .col--two.wrapper--flex
-      >div 
-        :margin-right 10px               
+      div 
+        :margin-right 10px
+        :background red   
+
+.modal--small
+  :max-width 420px
+  :width 90%
+.modal-guest-rsvp
+  h2, p 
+    :text-align center
+  h2 
+    :color $pink
+    :font-size 1.8rem
+  p 
+    :font-size 1.4rem      

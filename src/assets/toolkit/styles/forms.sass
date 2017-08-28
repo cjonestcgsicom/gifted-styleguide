@@ -143,9 +143,36 @@ select
 				&:nth-of-type(2n + 1)
 					:margin-right 0
 .cash-out-modal
+	.donation-selection
+		:width 70%
+		:margin 0 auto
+		:margin-bottom 80px
 	.payment-method-selection
 		:display flex
 		input
 			:width auto
 		label
-			:flex-grow 1					
+			:flex-grow 1	
+.modal-guest-rsvp form
+	.col--two 
+		:width calc(50% - 10px)
+		:margin-right 20px
+		&:nth-of-type(2n)
+			:margin-right 0
+	.meal-options	
+		label 
+			:display block
+	.rsvp-options
+		input
+			:visibility hidden
+			:position absolute
+		label 
+			:display block
+			:text-align center
+			:text-transform uppercase
+			:background $inactive-gray
+			:color $inactive-gray-font
+			:padding 12px 0
+		input:checked + label 
+			:background $pink
+			:color white			
