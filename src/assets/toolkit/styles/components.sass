@@ -5,6 +5,10 @@
 	:text-transform uppercase
 	:cursor pointer
 	:transition all 0.3s
+	:display inline-block
+.button--small
+	:font-size 1.4rem
+	:padding 10px	20px
 .button--dark
 	:background-color $font-black
 	:border 1px solid $font-black
@@ -15,6 +19,14 @@
 .button--light
 	:background-color white
 	:border 1px solid white
+	:color $font-black
+	&:hover
+		:background-color $font-black
+		:border 1px solid $font-black
+		:color white
+.button--light-border
+	:background-color white
+	:border 1px solid $font-black
 	:color $font-black
 	&:hover
 		:background-color $font-black
@@ -203,3 +215,8 @@
 .event-info
 	img
 		:max-width 90%
+
+#card-elements
+	:background #F3F3F3
+	:padding 12px
+	:margin 10px 0
