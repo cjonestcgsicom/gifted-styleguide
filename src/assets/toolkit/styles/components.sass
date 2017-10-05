@@ -212,11 +212,53 @@
 	.col--four
 		:align-self center
 
-.event-info
-	img
-		:max-width 90%
 
 #card-elements
 	:background #F3F3F3
 	:padding 12px
 	:margin 10px 0
+
+// EVENT DASHBOARD SINGLE EVENT		
+
+.event-info
+	img
+		:max-width 100%
+	.image 
+		:padding-right 10%
+	.details 
+		p 
+			:font-size 1.7rem
+			:font-weight bold
+			:margin 0 0 6px
+		p.date 
+			:font-size 1.1rem
+		p.host 
+			:font-size 1.3rem	
+		p.date, p.host	
+			:color rgba(50,60,71,0.5)
+			:font-weight 300
+		ul 
+			:font-size 1.4rem	
+			:font-weight bold
+			:padding 0
+			a 
+				:color $black
+			li 
+				:margin-bottom 12px
+				:cursor pointer
+				span 	
+					:margin-right 6px	
+.event--invitation_share
+	:align-items center
+	span, ul 
+		:flex-grow 1
+	span 
+		:font-size 1.3rem
+		:text-transform uppercase	
+	ul 
+		:justify-content space-around
+		:padding 0
+		:margin 8px 0
+		i 
+			:color $pink
+			:font-size 2rem					
