@@ -1,6 +1,30 @@
 .address-book--index
 	:background $panel-gray
 	:padding 8px
+	.address-book--title
+		:align-items center
+		:padding 16px 0
+	.address-book--delete
+		:flex-grow 1
+		:text-align right
+		a 
+			:display inline-block
+		img 
+			:padding 10px
+			:border	1px dashed $border-gray
+			:border-radius 3px
+		span 
+			:font-size 1rem
+			:text-transform uppercase
+			:color $font-black
+			:display block	
+			:text-align center
+	h2 
+		:font-size 1.8rem
+		:margin 0 30px 0 0
+	.row.row-title
+		:text-transform uppercase
+		:font-weight 600
 	.row 
 		:background white
 		:margin-bottom 8px
@@ -8,4 +32,8 @@
 		:letter-spacing 0.42
 		:padding 12px 0
 		span:nth-of-type(1)
-			:width 100px
+			:width 15%
+			:flex-basis 120px
+		span:nth-of-type(2)
+			:width 30%
+			:flex-basis 270px
