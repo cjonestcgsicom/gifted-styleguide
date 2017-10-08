@@ -1,6 +1,19 @@
 .address-book--index
 	:background $panel-gray
 	:padding 8px
+	.address-book--contacts
+		:position relative
+		:text-align center
+		input[type="checkbox"] + label
+			:width 18px
+			:height 18px
+			:border 1px solid $border-gray
+			:margin 0
+		input[type="checkbox"]:checked + label 
+			:background $border-gray
+		input[type="checkbox"]
+			:position absolute
+			:z-index -9999
 	.address-book--title
 		:align-items center
 		:padding 16px 0
