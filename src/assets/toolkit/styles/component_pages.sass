@@ -1,0 +1,42 @@
+header.search-page--wrapper
+	:background-image url(../../../assets/toolkit/images/search_page_bg.jpg)
+	:background-repeat no-repeat
+	:background-size cover
+	:background-position center
+	:padding 120px 0
+	h2 
+		:font-size 3.5rem
+		:color white
+		:font-weight 400
+		:text-align center
+		:margin 0 0 30px
+	.wrapper 
+		:max-width 500px
+	.search-page--input	
+		:position relative
+		button
+			:position absolute
+			:background white
+			:border none
+			:right 3px
+			:top 3px
+.search-page--list
+	ul 
+		:margin 40px 0
+		:padding 0
+	li 
+		:background $panel-gray
+		:padding 10px 48px
+		:margin-bottom 4px
+		a 
+			:color $font-black
+			:display flex
+			:justify-content space-between
+			:font-size 1.4rem
+			span 
+				:flex-grow 1
+				&:nth-of-type(2)
+					:flex-grow 2
+					:text-align center
+				&:nth-of-type(3)	
+					:text-align right
