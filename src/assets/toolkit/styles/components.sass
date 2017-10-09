@@ -248,13 +248,15 @@
 				:cursor pointer
 				span 	
 					:margin-right 6px	
-.event--invitation_share
-	:align-items center
+.event--share
+	.wrapper--flex
+		:align-items center
+		>span 
+			:text-transform uppercase	
 	span, ul 
 		:flex-grow 1
 	span 
 		:font-size 1.3rem
-		:text-transform uppercase	
 	ul 
 		:justify-content space-around
 		:padding 0
@@ -262,6 +264,19 @@
 		i 
 			:color $pink
 			:font-size 2rem	
+	.share--url
+		:border 1px solid $border-gray
+		:font-size 1.3rem
+		:color rgba(50,60,71,0.6)
+		:padding 8px		
+		:margin 12px 0
+		:display flex
+		:justify-content space-around
+		img 
+			:width 15px
+			:margin 0
+			:flex-grow 1
+		
 
 
 							
