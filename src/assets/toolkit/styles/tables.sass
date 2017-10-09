@@ -60,6 +60,7 @@
 			:margin 0
 			:padding 0
 			:text-align center
+			:align-items center
 	&--admin-title
 		:background $panel-gray
 		:font-size 1.4rem
@@ -75,8 +76,6 @@
 		li 
 			:width calc(100% / 10)	
 	&--admin-invites
-		ul 
-			:align-items center
 		li 
 			:width calc(100% / 6)	
 			img 
@@ -88,8 +87,13 @@
 			img
 				:width 100%
 				:max-width 150px
-		ul
-			:align-items center								
+		
+	&--admin-news
+		li 
+			:width calc(100% / 5)	
+			img 
+				:width 100%
+				:max-width 150px										
 .unsent
 .attending
 	:color $attending
