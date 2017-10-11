@@ -276,6 +276,142 @@
 			:width 15px
 			:margin 0
 			:flex-grow 1
+.modal.messages-modal
+	:width 95%
+	:max-width 1200px
+	:padding 20px 10px			
+.messages-modal
+	.wrapper--flex 
+		>section
+			:width calc(50% - 10px)
+			:background $panel-gray
+			:padding 6px
+			&:first-of-type
+				:margin-right 20px
+	.send-message-container
+		:background white
+		h3, h4		
+			:font-weight 300
+			:text-align center
+		h3 
+			:font-size 1.6rem
+			:margin 50px 0 32px
+		h4 
+			:font-size 1.4rem	
+		p 
+			:font-size 1.2rem	
+			:width 60%
+			:margin 18px auto
+			&:last-of-type
+				:padding-bottom 50px
+		>img 
+			:width 60% 
+			:margin 18px 20%
+			:padding-bottom 32px
+			
+	&--select
+		:position relative
+		:text-align center
+		input[type="checkbox"] + label
+			:width 18px
+			:height 18px
+			:border 1px solid $border-gray
+			:margin 0 auto
+			:display block
+
+		input[type="checkbox"]:checked + label 
+			:background $pink
+			:border 1px solid $pink
+			&:after 
+				:content '✔'
+				:display block
+				:color white
+				:font-size 1rem
+				:line-height 18px
+
+		input[type="checkbox"]
+			:position absolute
+			:z-index -9999	
+			:visibility hidden
+	&--title 
+		:background $panel-gray
+		:padding 6px 8px
+		h2 
+			:font-size 1.6rem
+			:font-weight 300
+			:margin-right 20px
+		input 
+			:border none
+			:border-bottom 1px solid $border-gray
+			:background $panel-gray	
+		button
+			:position absolute
+			:top 50%
+			:transform translateY(-50%)
+			:right 3px
+			:border none
+			:background $panel-gray
+	&--search
+		:flex-grow 1
+		:display flex
+		:justify-content flex-end		
+		:position relative	
+	.row.row-title
+		:text-transform uppercase
+		:font-weight 600
+		:align-items center
+	.row
+		:background white
+		:margin-bottom 8px
+		:font-size 1.4rem
+		:letter-spacing 0.42px
+		:padding 12px 0
+		span:nth-of-type(1)
+			:width 15%
+			:flex-basis 120px
+		span:nth-of-type(2), span:nth-of-type(3)
+			:width 30%
+			:flex-basis 270px	
+	.row:not(.row-title)	
+		&:hover 
+			:background $hover-gray
+	&--send
+		:text-align right
+		:padding 20px 10px
+		:display block
+		svg
+			g
+				:stroke #fff
+		.button				
+			&:hover
+				svg 
+					g 
+						:stroke $pink
+	&--send-invites
+		.row 
+			span 
+				:width calc(100% / 4)					
+				:padding 0 2px
+.registrations
+	.button
+		:width 100%
+		:margin 30px 0 20px
+	&--social
+		:position relative
+		:border-top 1px solid $border-gray
+		:margin-top 45px
+		:padding-top 45px
+		.instruction
+			:position absolute
+			:background white
+			:top 0
+			:left 50%
+			:transform translate(-50%, -50%)	
+			:display block
+			:padding 4px 12px
+			:white-space nowrap
+			:font-size 1.2rem
+
 		
 
 
