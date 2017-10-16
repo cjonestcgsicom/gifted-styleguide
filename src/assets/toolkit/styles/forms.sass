@@ -75,16 +75,24 @@ select
 		:margin-right 20px
 		&:last-of-type 
 			:margin-right 0
-		p 
+		div 
 			:position absolute
-			:top 50%
-			:left 50%
-			:transform translate(-50%, -50%)
+			:top 0
+			:left 0
+			:right 0
+			:bottom 0
+			:width 100%
+			:height 100%
+			:background rgba(0,0,0,0.4)
 			:color white
 			:font-size 1.2rem
-			:width 60%
 			:text-align center
 			:margin 0
+			:display flex 
+			:justify-content center 
+			:align-items center 
+		img 
+			:display block	
 
 
 .personalize-invite
@@ -185,5 +193,36 @@ select
 					:border 2px solid $pink	
 			input:checked + label 
 				:background white
-				:color $inactive-gray-font		
+				:color $inactive-gray-font
+.invitation--style-form
+	:max-width 600px
+	:margin 0 auto
+	.wrapper--flex
+		:align-items flex-start
+	p 
+		:font-size 1.2rem
+	>div 
+		:flex-grow 1
+	.font-size-select 
+		input 
+			:display inline-block
+		label 
+			:background $font-black
+			:display inline-block
+			:border-radius 50%
+		.small 
+			:width 11px
+			:height 11px
+		.medium
+			:width 18px
+			:height 18px
+		.large
+			:width 23px
+			:height 23px	
+.form-event-details
+	input[type=checkbox] + label
+		:width 21px
+		:height 21px
+		:border 1px solid $font-black
+		:display inline-block
 			

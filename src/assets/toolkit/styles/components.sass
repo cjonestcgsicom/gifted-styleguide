@@ -8,7 +8,7 @@
 	:display inline-block
 .button--small
 	:font-size 1.4rem
-	:padding 10px	20px
+	:padding 10px 20px
 .button--dark
 	:background-color $font-black
 	:border 1px solid $font-black
@@ -46,6 +46,20 @@
 	&:hover
 		:background-color $pink
 		:color white
+.button--social 
+	:border 1px solid $font-black
+	:bacckground-color white
+	:font-size 1.2rem
+	:color $font-black
+	:position relative
+	i 
+		:position absolute
+		:top 50%
+		:left 30px
+		:transform translateY(-50%)
+		:font-size 2rem
+	.fa-facebook
+		:color $fb-blue	
 
 .donation-slider
 	input[type=range].colorized
@@ -399,8 +413,8 @@
 	&--social
 		:position relative
 		:border-top 1px solid $border-gray
-		:margin-top 45px
-		:padding-top 45px
+		:margin-top 30px
+		:padding-top 30px
 		.instruction
 			:position absolute
 			:background white
@@ -411,7 +425,22 @@
 			:padding 4px 12px
 			:white-space nowrap
 			:font-size 1.2rem
-
+	a 
+		:color $font-black
+		:font-size 1.2rem
+		&:hover 
+			:color $pink		
+.registrations--actions
+	:text-align center	
+	:margin-bottom 60px		
+.registrations--action-link
+	:font-size 1.2rem
+	:color $font-black
+	:border-bottom 1px solid $font-black
+	:display inline-block
+.event-cta
+	:text-align center	
+	:margin 40px 0
 		
 
 
