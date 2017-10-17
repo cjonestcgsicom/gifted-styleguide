@@ -220,9 +220,36 @@ select
 			:width 23px
 			:height 23px	
 .form-event-details
-	input[type=checkbox] + label
+	input[type=checkbox] + label, 
+	input[type=radio] + label
 		:width 21px
 		:height 21px
-		:border 1px solid $font-black
+		:border 1px solid $border-gray
 		:display inline-block
-			
+		:position relative
+	input[type=checkbox], 
+	input[type=radio]
+		:visibility hidden
+		:position absolute	
+	input[type=checkbox]:checked + label, 
+	input[type=radio]:checked + label  
+		&:after 
+			:content '✓'
+			:position absolute	
+			:top 50%
+			:left 50%
+			:transform translate(-50%, -50%)
+			:line-height 21px
+	span 	
+		:font-size 1.4rem
+		:text-transform capitalize
+	.check-options 
+		h3 
+			:font-size 1.4rem
+		>div 
+			:display flex
+			:align-items center
+			:margin-bottom 16px
+			label 
+				:margin-bottom 0
+				:margin-right 16px				
