@@ -6,6 +6,12 @@
 	:cursor pointer
 	:transition all 0.3s
 	:display inline-block
+.button--medium
+	:font-size 1.2rem
+	:padding 12px
+	:width 80%
+	:margin 0 auto
+	:max-width 270px	
 .button--small
 	:font-size 1.4rem
 	:padding 10px 20px
@@ -60,6 +66,19 @@
 		:font-size 2rem
 	.fa-facebook
 		:color $fb-blue	
+.button--add-calendar
+	:border 1px solid $font-black		
+	:font-size 1rem
+	:color $font-black
+	:display flex
+	:padding 4px 12px
+	:max-width 140px 
+	:margin 12px auto 20px
+	:align-items center
+	:justify-content space-around
+	:border-radius 3px
+	img
+		:width 18px
 
 .donation-slider
 	input[type=range].colorized
@@ -155,7 +174,17 @@
 		:padding 30px 50px
 		:border 3px solid $panel-gray
 		:background-color white
-
+.home-header
+	:position relative
+	.choices 
+		:position absolute
+		:bottom 28px
+		:left 50%
+		:transform translateX(-50%)
+		:width 100%
+		:display flex
+		:align-items center
+		:justify-content space-around
 .header-image
 	:background-image url(../../../assets/toolkit/images/header_image.jpg)
 	:background-repeat no-repeat
@@ -442,6 +471,14 @@
 	:text-align center	
 	:margin 40px 0
 		
+.flickity-carousel
+	.cell
+		:width 100%
+		img 
+			:width 100%		
+.flickity-page-dots
+	:display none			
+
 
 
 							

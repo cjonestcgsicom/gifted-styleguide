@@ -43,6 +43,9 @@ select
 			:margin-bottom 0
 			select 
 				:padding 12px 18px
+	label 
+		:display block
+		:text-align left			
 	a.learn-more
 		:display block
 		:color $pink
@@ -63,6 +66,13 @@ select
 	.selected
 		:border 6px solid black
 		:padding 20px
+	.form-section
+		.wrapper--flex
+			:align-items flex-end
+		.button--small
+			:padding 12px 20px
+		.field 
+			:margin-right 40px			
 
 .choose-invitation
 	.invite-tags
@@ -141,6 +151,21 @@ select
 			:max-width 200px
 	.support-logo 
 		:max-width 120px
+	.note 
+		:text-align center
+		:font-size 1.4rem
+		:font-style italic
+		:max-width 600px
+		:margin 60px auto 10px
+	textarea 
+		:border 1px dotted $border-gray
+		:height 300px
+		:padding 50px
+	.open-preview
+		:color $pink
+		:border none			
+		:border-bottom 1px solid $pink
+		:background transparent
 .new_user_contact
 	:width 75%
 	:margin 0 auto
