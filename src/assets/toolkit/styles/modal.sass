@@ -6,6 +6,8 @@
   position: fixed
   z-index: 1000
   color: $font-black
+  :max-height 90vh
+  :overflow scroll
   .close
     position: absolute
     top: 20px
@@ -192,4 +194,43 @@
     :color $pink
     :font-size 1.8rem
   p 
-    :font-size 1.4rem      
+    :font-size 1.4rem  
+.learn-more-modal 
+  .wrapper--flex 
+    >div 
+      &:first-of-type 
+        :width 30%
+      &:last-of-type
+        :width 70%     
+.preview-modal
+	.date 
+    :font-size 1.3rem
+    :margin-bottom 20px
+	h3 
+		:margin 6px 0
+	.dashboard-menu
+		:margin-bottom 0 
+  p.support
+    :font-size 1.4rem
+    :font-weight 700
+	img.charity-logo
+		:width 140px
+	.guest-note
+		:font-size 1.2rem
+		:text-align left
+		:line-height 1.5
+		:max-width 500px
+		:margin 18px auto 36px
+	.event--share 
+		:margin 40px auto 0
+	.share--url 
+		:margin 0
+	.tabs 
+		:justify-content center
+		li 
+			:margin 0 16px				
+.preview-registry
+  img.registry-image
+    :width 200px
+    :min-width 200px 
+    :margin-bottom 20px 

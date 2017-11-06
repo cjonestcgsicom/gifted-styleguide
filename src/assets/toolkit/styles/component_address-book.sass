@@ -1,0 +1,74 @@
+.address-book--index
+	:background $panel-gray
+	:padding 8px
+	.address-book--contacts
+		:position relative
+		:text-align center
+		input[type="checkbox"] + label
+			:width 18px
+			:height 18px
+			:border 1px solid $border-gray
+			:margin 0
+		input[type="checkbox"]:checked + label 
+			:background $border-gray
+		input[type="checkbox"]
+			:position absolute
+			:z-index -9999
+	.address-book--title
+		:align-items center
+		:padding 16px 0
+	.address-book--search
+		:flex-grow 1
+		:display flex
+		:justify-content flex-end
+		form 
+			:flex-basis 300px
+			:position relative
+			button
+				:position absolute
+				:top 50%
+				:transform translateY(-50%)
+				:right 3px
+				:border none
+				:background $panel-gray
+		input 
+			:border none
+			:border-bottom 1px solid $border-gray
+			:background $panel-gray	
+	.address-book--delete
+		:flex-grow 1
+		:text-align right
+		button 
+			:display inline-block
+			:border none
+			:background white
+			:cursor pointer
+		img 
+			:padding 10px
+			:border	1px dashed $border-gray
+			:border-radius 3px
+		span 
+			:font-size 1rem
+			:text-transform uppercase
+			:color $font-black
+			:display block	
+			:text-align center
+	h2 
+		:font-size 1.8rem
+		:margin 0 30px 0 0
+	.row.row-title
+		:text-transform uppercase
+		:font-weight 600
+		:align-items center
+	.row 
+		:background white
+		:margin-bottom 8px
+		:font-size 1.4rem
+		:letter-spacing 0.42
+		:padding 12px 0
+		span:nth-of-type(1)
+			:width 15%
+			:flex-basis 120px
+		span:nth-of-type(2), span:nth-of-type(3)
+			:width 30%
+			:flex-basis 270px
