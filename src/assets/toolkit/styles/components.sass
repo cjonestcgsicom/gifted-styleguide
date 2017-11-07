@@ -12,9 +12,11 @@
 	:width 80%
 	:margin 0 auto
 	:max-width 270px	
-.button--small
+.button.button--small
 	:font-size 1.4rem
 	:padding 10px 20px
+.button--wide 
+	:padding 20px 140px	
 .button--dark
 	:background-color $font-black
 	:border 1px solid $font-black
@@ -38,6 +40,12 @@
 		:background-color $font-black
 		:border 1px solid $font-black
 		:color white
+.button--dark-border
+	:background-color white
+	:border 1px solid white
+	:color $font-black
+	&:hover 
+		:border 1px solid $font-black		
 .button--pink
 	:background-color $pink 
 	:border 1px solid $pink 
@@ -49,6 +57,12 @@
 	:background-color white	
 	:border 1px solid $pink
 	:color $pink
+	&:hover
+		:background-color $pink
+		:color white
+.button--dark-pink-inverted		
+	:background-color $font-black	
+	:color white
 	&:hover
 		:background-color $pink
 		:color white
@@ -319,6 +333,7 @@
 			:width 15px
 			:margin 0
 			:flex-grow 1
+
 .modal.messages-modal
 	:width 95%
 	:max-width 1200px

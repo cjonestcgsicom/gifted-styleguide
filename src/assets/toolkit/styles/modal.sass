@@ -8,13 +8,16 @@
   color: $font-black
   :max-height 90vh
   :overflow scroll
+  :transition 0.3s all ease
+  :opcatiy 1  
   .close
     position: absolute
     top: 20px
     right: 20px
     font-size: 22px
     cursor: pointer
-
+.modal.transition
+  :opacity 0
 .modal--overlay
   position: fixed
   top: 0
@@ -74,9 +77,16 @@
     :font-size 1.4rem
     :margin 0
 
-.add-guest-modal
+.add-guest-modal, .add-contact-modal
   :max-width 977px
   :border 1px solid $border-gray
+  .dashboard-menu
+    :margin 30px auto 20px
+    ul
+      :margin 0
+      :border-bottom 1px solid $inactive-gray
+    li
+      :text-transform capitalize
   h2 
     :margin-top 25px
   .button 
@@ -101,34 +111,74 @@
       :margin-top 10px
   .import-contacts
     :text-align center
+    :font-size 1.4rem
+    .col--three
+      :display flex
+      :flex-direction column
+      :justify-content space-between
+      img:first-of-type 
+        :margin-bottom 18px
+      img:last-of-type 
+        :margin-top 18px      
     input 
       :border none
-  .upload 
-    :margin 0 auto
-    :width 30%
-    &::-webkit-file-upload-button
+    p 
+      :margin 2px 0
+    .upload 
+      :position absolute
       :visibility hidden
-    &:before
-      :content 'upload csv'
-      :display inline-block
-      :border 1px solid $pink
-      :padding 5px 8px
-      :outline none
-      :white-space nowrap
-      :-webkit-user-select none
-      :cursor pointer
+      :height 1px
+      :width 1px
+      :padding 0
+    .wrapper--buttons
+      :justify-content center
+      :margin-top 116px
+      .button 
+        :margin 0 20px
+      .button--dark 
+        :border 1px solid $font-black  
   .address-book-contacts
+    input[type='checkbox']
+      // :width 215px
+      :visibility hidden
+      :height 1px
+      :width 1px
+    input[type='checkbox']:checked + span
+      :border 1px solid $pink
+      :background $pink
+      :position relative
+      &:after 
+        :content '✓' 
+        :color white
+        :position absolute
+        :top 50%
+        :left 50%
+        :transform translate(-50%, -50%)
+    .contact-box
+      :width 21px
+      :height 21px
+      :display block
+      :border 1px solid $border-gray 
+    .contact-box-all
+      :border 1px solid $border-gray   
+      :width 18px
+      :height 18px
+      :display inline-block
+      :vertical-align middle
+      :margin-left 10px
+   
     .contact-label
       :display flex
       :align-items center
       :margin 0
       :font-size 1.2rem
+      .contact-box 
+        :margin-right 184px
       .contact-name 
         :width 200px
-      input[type='checkbox']
-        :width 215px
       p 
         :margin 0
+
   .contact 
     :border-bottom 1px solid #EAECEB
     :padding 18px
@@ -139,6 +189,7 @@
     :display flex 
     :font-weight bold
     :padding 10px
+    :border-bottom 1px solid #EAECEB
     .all 
       :width 215px 
     .name 

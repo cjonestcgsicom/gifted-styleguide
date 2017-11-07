@@ -60,6 +60,19 @@ nav.event-flow-disabled.event-flow
 			:color #A7A7A7
 
 // FOOTER
+.footer--help
+	:font-size 1.4rem
+	:display flex
+	:justify-content flex-end
+	:margin-bottom 20px
+
+	>div 
+		:text-align center
+	p 
+		:font-weight bold
+		:margin 4px 0
+	a 
+		:color $pink
 nav.footer
 	:background-color $black
 	:padding 40px 0
@@ -183,6 +196,8 @@ nav.header
 			:transition 0.3s
 			&:hover
 				:color $font-black
+	.login:hover ul.user-options
+		:display block				
 	ul.user-options
 		:border 1px solid $border-gray
 		:padding 0
@@ -192,6 +207,7 @@ nav.header
 		:top 30px
 		:right 0
 		:z-index 100
+		:display none
 		li 
 			:text-align left
 			:font-size 1.2rem
