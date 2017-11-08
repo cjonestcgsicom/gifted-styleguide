@@ -286,3 +286,32 @@
     :width 200px
     :min-width 200px 
     :margin-bottom 20px 
+    
+input.guest-list-messages-select-all     
+  :visibility hidden
+  :height 1px
+  :width 1px
+  :position absolute
+.guest-list-messages-select-all + label
+  :width 18px
+  :height 18px
+  :display inline-block
+  :border 1px solid $border-gray
+.guest-list-messages-select-all:checked + label  
+  :background $pink
+  :border 1px solid $pink
+  :position relative
+  &:after 
+    :content '✓' 
+    :color white
+    :position absolute
+    :top 50%
+    :left 50%
+    :transform translate(-50%, -50%)
+.modal-select-all    
+  :text-align center
+  >span 
+    :display block
+    :width 100% !important
+
+  

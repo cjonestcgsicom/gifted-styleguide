@@ -306,4 +306,28 @@ select
 .registrations form
 	input[type=checkbox] + label
 		:margin-right 12px			
-		
+.user-contact-select-all
+	:text-align center
+	input[type="checkbox"]		
+		:visibility hidden
+		:height 1px
+		:width 1px
+		:position absolute
+	input[type="checkbox"] + label
+		:width 21px
+		:height 21px
+		:display block
+		:border 1px solid $border-gray
+		:margin 0 auto
+	input[type="checkbox"]:checked + label	
+		:border 1px solid $pink
+		:background $pink
+		:position relative
+		&:after 
+			:content '✓' 
+			:color white
+			:position absolute
+			:top 50%
+			:left 50%
+			:transform translate(-50%, -50%)
+
