@@ -10,7 +10,17 @@
 			:border 1px solid $border-gray
 			:margin 0
 		input[type="checkbox"]:checked + label 
-			:background $border-gray
+			:background $pink
+			:position relative
+			:border 1px solid $pink
+			&:after 
+				:content '✓'
+				:color white
+				:position absolute
+				:top 50%
+				:left 50%
+				:transform translate(-50%, -50%)
+
 		input[type="checkbox"]
 			:position absolute
 			:z-index -9999
