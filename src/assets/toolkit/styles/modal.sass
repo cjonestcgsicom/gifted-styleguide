@@ -8,7 +8,7 @@
   color: $font-black
   :max-height 90vh
   :overflow scroll
-  :transition 0.3s all ease
+  // :transition 0.3s all ease
   :opcatiy 1  
   .close
     position: absolute
@@ -286,3 +286,39 @@
     :width 200px
     :min-width 200px 
     :margin-bottom 20px 
+    
+input.guest-list-messages-select-all     
+  :visibility hidden
+  :height 1px
+  :width 1px
+  :position absolute
+.guest-list-messages-select-all + label
+  :width 18px
+  :height 18px
+  :display inline-block
+  :border 1px solid $border-gray
+.guest-list-messages-select-all:checked + label  
+  :background $pink
+  :border 1px solid $pink
+  :position relative
+  &:after 
+    :content '✓' 
+    :color white
+    :position absolute
+    :top 50%
+    :left 50%
+    :transform translate(-50%, -50%)
+.modal-select-all    
+  :text-align center
+  >span 
+    :display block
+    :width 100% !important
+.guest-list-messages-invite, .guest-list-messages-thankyou, .guest-list-messages-message
+  :height 430px
+  :overflow scroll    
+.modal 
+  .button 
+    :transition 0s all !important
+  .form-option-link
+    :transition 0s all !important  
+  
