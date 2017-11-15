@@ -347,12 +347,18 @@
 	:padding 20px 10px			
 .messages-modal
 	.wrapper--flex 
+		+display-for(sm xs)
+			:flex-wrap wrap
 		>section
-			:width calc(50% - 10px)
 			:background $panel-gray
 			:padding 6px
-			&:first-of-type
-				:margin-right 20px
+			+display-for(sm xs)
+				:width 100%
+				:margin-bottom 40px
+			+display-for(xl lg md)
+				:width calc(50% - 10px)
+				&:first-of-type
+					:margin-right 20px
 	.send-message-container
 		:background white
 		h3, h4		
