@@ -358,6 +358,10 @@ nav.main-page
 	.tabs, .form-options
 		:justify-content space-around
 		:padding 0
+		+display-for(sm xs)
+			:display none
+			:padding 10px
+			:border 1px solid $inactive-gray-font
 		li
 			:font-size 1.4rem
 			:text-transform uppercase
@@ -367,8 +371,19 @@ nav.main-page
 			:cursor pointer
 			&:hover
 				:border-bottom 4px solid $pink
+			+display-for(sm xs)
+				:width 100%
+				:padding 8px
+				&:hover 
+					:background-color $pink
+					a 
+						:color white
 		.tab-link.current, .form-option-link.current  
 			:border-bottom 4px solid $pink	
+			+display-for(sm xs)
+				:border-bottom none
+				:background-color $pink 
+				:color white
 		a 
 			:color $font-black 
 .user-name-info

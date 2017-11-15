@@ -145,6 +145,7 @@
 	:padding 15px 50px 30px 50px
 	+display-for(sm xs)
 		:border none
+		:padding 15px 10px 30px 10px
 	.total, .total-charity, .total-host 
 		:text-align center
 		h3 
@@ -294,7 +295,13 @@
 		:max-width 100%
 	.image 
 		:padding-right 10%
-	.details 
+		+display-for(sm xs)
+			:order 2
+			:padding-right 0
+	.details
+		ul
+			+display-for(sm xs)
+				:display none 
 		p 
 			:font-size 1.7rem
 			:font-weight bold
@@ -323,6 +330,8 @@
 					:margin-right 6px	
 				
 .event--share
+	+display-for(sm xs)
+		:display none
 	.wrapper--flex
 		:align-items center
 		>span 
