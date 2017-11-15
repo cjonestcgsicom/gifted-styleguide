@@ -21,6 +21,8 @@ select
 	:border-radius 0
 	:padding 15px 18px
 	:background transparent
+	+display-for(sm xs)
+		:padding 10px 7px
 
 .event-submit
 	:margin-top 150px
@@ -40,10 +42,24 @@ select
 	.search-form
 		:align-items flex-end	
 		:text-align center
+		.wrapper--flex
+			+display-for(sm xs)
+				:width 100%
 		.field
 			:margin-bottom 0
+			+display-for(sm xs)
+				:margin 15px auto 15px auto
+				:width 100%
 			select 
 				:padding 12px 18px
+				+display-for(sm xs)
+					:width 100%
+		button.search-charity 
+			+display-for(sm xs)
+				:align-self center
+		+display-for(sm xs)
+			:first-child 
+				:order 2
 	label 
 		:display block
 		:text-align left			
@@ -58,6 +74,9 @@ select
 		:height 200px
 		:width 200px
 		:position relative
+		+display-for(sm xs)
+			:height 160px
+			:width 160px
 	.selected 
 		:border 5px solid black
 		
@@ -72,6 +91,9 @@ select
 		:position absolute
 		:top 10px
 		:left 10px
+		+display-for(sm xs)
+			:width 130px
+			:height 130px
 	.event-charity-logo
 		:max-width 100%
 		:max-height 100%
@@ -84,13 +106,17 @@ select
 		.button--small
 			:padding 12px 20px
 		.field 
-			:margin-right 40px			
+			:margin-right 40px
+			+display-for(sm xs)
+				:margin-right 0			
 
 .choose-invitation
 	.invite-tags
 		:justify-content space-evenly
 		:margin-top 60px
 		:margin-bottom 90px
+		+display-for(sm xs)
+			:display none
 	.invitation-type
 		:position relative
 		:cursor pointer
@@ -118,7 +144,15 @@ select
 				:background rgba(0,0,0,0)
 		img 
 			:display block	
-
+.invitation-type-dropdown	
+	:display none 
+	+display-for(sm xs)
+		:display block 
+		:margin 40px auto 0 auto 
+		select 
+			:background-color #f6f6f6
+			:border 1px solid #f6f6f6
+			:width 100%	
 
 .personalize-invite
 	.wrapper--flex
@@ -137,6 +171,9 @@ select
 		:max-width 200px
 		:margin-top 90px
 		:margin-bottom 60px
+		+display-for(sm xs)
+			:margin-top 30px
+			:margin-bottom 20px
 	h2 
 		:text-transform uppercase
 		:font-size 2.4rem

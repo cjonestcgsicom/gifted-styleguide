@@ -9,6 +9,12 @@ nav.event-flow
 	:width 80%
 	:max-width 720px
 	:margin 0 auto
+	+display-for(sm xs)
+		:justify-content space-evenly
+	.event-dot 
+		:display none
+		+display-for(sm xs)
+			:display block
 	.col--seven
 		:align-self flex-end
 		:padding 0 10px
@@ -19,6 +25,8 @@ nav.event-flow
 			:top 50%
 			:transform translateY(-50%)
 			:left 95%
+			+display-for(sm xs)
+				:display none
 		&:last-child
 			&:after
 				:content ''
@@ -31,21 +39,29 @@ nav.event-flow
 			.event-icon 
 				:stroke $pink
 				:stroke-width 1.7
+			.Mobile_Choose-Event-Type
+				:fill $pink
 	.menu-hl
 		p 
 			:color $pink
 		.event-icon 
 				:stroke $pink
 				:stroke-width 1.7
+		.Mobile_Choose-Event-Type
+				:fill $pink
 	p 
 		:text-transform uppercase
 		:text-align center
 		:font-size 1rem
+		+display-for(sm xs)
+			:display none
 	.event-svg 
 		
 	.event-icon-svg
 		:display block
 		:margin 0 auto
+		+display-for(sm xs)
+			:display none
 nav.event-flow-disabled.event-flow
 	.event-icon
 		:stroke #A7A7A7	

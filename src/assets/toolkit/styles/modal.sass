@@ -9,13 +9,18 @@
   :max-height 90vh
   :overflow scroll
   // :transition 0.3s all ease
-  :opcatiy 1  
+  :opcatiy 1 
+  +display-for(sm xs)
+    :width 90%
+    :padding 20px 20px 
   .close
     position: absolute
     top: 20px
     right: 20px
     font-size: 22px
     cursor: pointer
+    +display-for(sm xs)
+      :top 5px
 .modal.transition
   :opacity 0
 .modal--overlay
