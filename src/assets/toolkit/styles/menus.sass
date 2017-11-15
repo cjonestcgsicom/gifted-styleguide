@@ -152,6 +152,35 @@ hr.header-line
 	:margin 0
 nav.header
 	:padding 36px 0
+	.nav--mobile
+		+display-for(xl gl md)
+			:display none
+	.nav--desktop 
+		+display-for(sm xs)
+			:display none
+	.nav--hamburger
+		:display block 
+		:padding 12px 18px
+		span
+			:width 32px 
+			:height 2px
+			:display block 
+			:margin-top 6px
+			:transition 0.3s all	
+			:background $font-black	
+	.nav--hamburger:before, .nav--hamburger:after	
+		:content ''		
+		:width 32px 
+		:height 2px
+		:display block 
+		:margin-top 6px
+		:transition 0.3s all	
+		:background $font-black	
+	.nav--hamburger:hover 
+		&:before 
+			:transform translate3d(0, -1px, 0)	
+		&:after 
+			:transform translate3d(0, 1px, 0)				
 	.wrapper--flex
 		:align-items center
 	.navbar-link
@@ -222,16 +251,47 @@ nav.header
 			a 
 				&:hover
 
+nav.main-page.open 
+	+display-for(sm xs)
+		:display block
 nav.main-page
 	:text-transform uppercase
 	:font-size 1.4rem
 	:padding 18px 0
+	+display-for(sm xs) 
+		:display none
+	.nav--mobile 
+		+display-for(xl lg md)
+			:display none 
+		&.nav-user-actions
+			:border-top 1px solid $inactive-gray
+			:padding 24px
+			a 
+				:font-weight normal	
+				:text-transform capitalize
+		&.nav-logo 
+			:padding 20px
+			:text-align center 
+			:border-bottom 1px solid $inactive-gray
+			img 
+				:width 120px
+		.main-nav-mobile-close
+			:float right 
+			:margin 3px 0 0
+			:cursor pointer
+			img 
+				:width 15px				
+	.nav--desktop 
+		+display-for(sm xs)
+			:display none		
 	ul
 		:list-style none
 		:margin 0
 		li
 			:display flex 
 			:align-items center
+			+display-for(sm xs)
+				:display block
 	a 
 		:text-decoration none
 		:color $font-black
@@ -246,6 +306,36 @@ nav.main-page
 			:color $font-black
 	.wrapper--flex
 		:justify-content space-between
+	+display-for(sm xs)
+		:background $font-black
+		:position fixed
+		:top 0
+		:width 100%
+		:height 100%
+		:z-index 10
+		.wrapper 
+			:margin 0
+			:width 100%
+		a, 
+		span 
+			:color white 
+			:font-weight bold 
+			:font-size 1.2rem
+		ul.wrapper--flex
+			:flex-direction column
+			:padding 24px
+
+		li 
+			:margin-bottom 30px	
+		li ul a 
+			:font-weight normal
+			:text-transform capitalize
+		li ul li 
+			&:last-of-type 
+				:margin-bottom 6px
+		span 
+			:display block
+			:margin-bottom 18px				
 
 .dashboard-menu
 	:margin 45px auto
