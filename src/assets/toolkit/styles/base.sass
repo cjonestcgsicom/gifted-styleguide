@@ -30,3 +30,9 @@ ul
 		:transform translateY(-50%)
 		:left 0
 		:z-index -1
+.small-only
+	+display-for(md lg xl)
+		:display none !important
+.big-only
+	+display-for(xs sm)
+		:display none !important			
