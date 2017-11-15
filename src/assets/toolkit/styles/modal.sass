@@ -125,7 +125,10 @@
       img:first-of-type 
         :margin-bottom 18px
       img:last-of-type 
-        :margin-top 18px      
+        :margin-top 18px 
+      +display-for(sm xs) 
+        :width 100%
+        :margin 20px 0       
     input 
       :border none
     p 

@@ -251,11 +251,20 @@ select
 	:margin 0 auto
 	.wrapper--flex
 		:justify-content space-between
+		+display-for(sm xs)
+			:flex-wrap wrap
 	.col--two 
 		+display-for(xl lg md)
-				:width calc(50% - 15px)
-				&:nth-of-type(2n + 1)
-					:margin-right 0
+			:width calc(50% - 15px)
+			&:nth-of-type(2n + 1)
+				:margin-right 0
+		+display-for(sm xs)
+			:width 100%
+	.col--twothirds
+		+display-for(sm xs)
+			:width 100%		
+
+
 .cash-out-modal
 	.donation-selection
 		:width 70%
