@@ -72,8 +72,11 @@ nav.event-flow-disabled.event-flow
 		:font-size 1rem
 		:display block
 		:margin 10px 0
+		+display-for(sm xs)
+			:display none
 		&:hover 
 			:color #A7A7A7
+
 
 // FOOTER
 .footer--help
@@ -253,6 +256,8 @@ nav.header
 		:right 0
 		:z-index 100
 		:display none
+		+display-for(sm xs)
+			:top 60px
 		li 
 			:text-align left
 			:font-size 1.2rem

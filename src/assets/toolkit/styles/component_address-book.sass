@@ -27,10 +27,20 @@
 	.address-book--title
 		:align-items center
 		:padding 16px 0
+		+display-for(sm xs)
+			:flex-direction column
+			h2 
+				:display none
+			.button
+				:width 100%
+				:margin-bottom 20px		
+
 	.address-book--search
 		:flex-grow 1
 		:display flex
 		:justify-content flex-end
+		+display-for(sm xs)
+			:width 100%
 		form 
 			:flex-basis 300px
 			:position relative
@@ -84,6 +94,7 @@
 			:flex-basis 270px
 			+display-for(sm xs)
 				:flex-basis 100px
+				:flex-grow 1
 .row-desktop
 	+display-for(sm xs)
 		:display none		
