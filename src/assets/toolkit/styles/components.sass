@@ -452,6 +452,8 @@
 		:text-transform uppercase
 		:font-weight 600
 		:align-items center
+		+display-for(sm xs)
+			:align-items flex-start
 	.row
 		:background white
 		:margin-bottom 8px
@@ -464,6 +466,11 @@
 		span:nth-of-type(2), span:nth-of-type(3)
 			:width 30%
 			:flex-basis 270px	
+			+display-for(sm xs)
+				:flex-basis 100px
+		span:nth-of-type(2)
+			+display-for(sm xs)
+				:flex-basis 140px		
 	.row:not(.row-title)	
 		&:hover 
 			:background $hover-gray
