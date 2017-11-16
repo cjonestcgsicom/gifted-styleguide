@@ -62,8 +62,11 @@
 	:max-width 750px
 	.wrapper--flex
 		:justify-content space-between
+		:flex-wrap wrap
 	.col--two
 		:width 49%
+		+display-for(sm xs)
+			:width 100%
 #error_explanation 
 	:padding 10px
 	:margin 20px 0

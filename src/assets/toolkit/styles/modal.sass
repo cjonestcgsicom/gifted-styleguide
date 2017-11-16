@@ -11,8 +11,12 @@
   // :transition 0.3s all ease
   :opcatiy 1 
   +display-for(sm xs)
-    :width 90%
+    :width 95%
     :padding 20px 20px 
+  .wrapper 
+    +display-for(sm xs)
+      :margin 0 !important  
+      :width 100%
   .close
     position: absolute
     top: 20px
@@ -100,12 +104,17 @@
     :display block
     :font-size 1.6rem
     :margin 30px auto
+    +display-for(sm xs)
+      :font-size 1.2rem
   .contact-blurb
     :margin-top 30px
     :margin-bottom 50px
     :padding 0 40px
     :text-align center
     :font-size 1.4rem
+    +display-for(sm xs)
+      :margin 20px 0
+      :padding 0
     a 
       :color blue
   input[placeholder] 
@@ -183,6 +192,8 @@
       :font-size 1.2rem
       .contact-box 
         :margin-right 184px
+        +display-for(sm xs)
+          :margin-right 30px
       .contact-name 
         :width 200px
       p 
@@ -201,6 +212,8 @@
     :border-bottom 1px solid #EAECEB
     .all 
       :width 215px 
+      +display-for(sm xs)
+        :width 60px
     .name 
       :width 200px
 .add-guest-modal
