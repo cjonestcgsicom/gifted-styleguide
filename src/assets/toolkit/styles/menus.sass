@@ -195,6 +195,8 @@ nav.header
 		:margin-top 6px
 		:transition 0.3s all	
 		:background $font-black	
+	.nav--hamburger:before
+		:margin-top 0	
 	.nav--hamburger:hover 
 		&:before 
 			:transform translate3d(0, -1px, 0)	
@@ -257,7 +259,7 @@ nav.header
 		:z-index 100
 		:display none
 		+display-for(sm xs)
-			:top 60px
+			:top 40px
 		li 
 			:text-align left
 			:font-size 1.2rem
