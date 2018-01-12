@@ -160,6 +160,8 @@ select
 			:justify-content center 
 			:align-items center
 			:transition 0.3s all ease 
+			p 
+				:text-transform uppercase
 			&:hover 
 				:background rgba(0,0,0,0)
 		img 
@@ -175,6 +177,13 @@ select
 			:width 100%	
 
 .personalize-invite
+	:display flex
+	+display-for(sm xs)
+		:display block
+	form
+		:flex-grow 1
+		select
+			:width 100%
 	.wrapper--flex
 	 	:justify-content center
 	 	:align-items flex-end
@@ -336,6 +345,7 @@ select
 .invitation--style-form
 	:max-width 600px
 	:margin 0 auto
+	:padding 50px 20px
 	.wrapper--flex
 		:align-items flex-start
 	p 
@@ -357,7 +367,25 @@ select
 			:height 18px
 		.large
 			:width 23px
-			:height 23px	
+			:height 23px
+	.invitation--style-form_font-selection
+		input 
+			:display inline-block
+			:width auto
+		div 
+			:text-align left
+			:margin-bottom 4px
+		label	
+			:font-size 1.8rem
+			:margin-left 2px
+	.font-style-select
+		.wrapper--flex 
+			:justify-content space-around
+			>div 
+				:display flex
+				:align-items center 
+				input
+					:margin-right 4px						
 .form-event-details
 	// input[type=checkbox] + label, 
 	// input[type=radio] + label
