@@ -44,9 +44,11 @@ nav.event-flow
 	.menu-hl
 		p 
 			:color $pink
-		.event-icon 
+		.event-icon, .event-icon-svg 
+			:stroke $pink
+			:stroke-width 1.7
+			path 
 				:stroke $pink
-				:stroke-width 1.7
 		.Mobile_Choose-Event-Type
 				:fill $pink
 	p 
@@ -72,6 +74,8 @@ nav.event-flow-disabled.event-flow
 		:font-size 1rem
 		:display block
 		:margin 10px 0
+	p.menu-hl
+		:color $pink
 		+display-for(sm xs)
 			:display none
 		&:hover 

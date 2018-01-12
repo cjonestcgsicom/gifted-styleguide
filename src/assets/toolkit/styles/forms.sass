@@ -23,6 +23,17 @@ select
 	:background transparent
 	+display-for(sm xs)
 		:padding 10px 7px
+.select
+	:position relative
+	:position relative
+	&:after 
+		:content "▼"
+		:width 100%
+		:right -50px
+		:top 50%
+		:transform translateY(-50%)
+		:position absolute
+		:z-index -1
 
 .event-submit
 	:margin-top 150px
@@ -38,6 +49,9 @@ select
 	:margin-top 40px
 	:margin-bottom 40px
 
+.event-charities
+	.wrapper--flex
+		:justify-content flex-start
 .choose-charity
 	.search-form
 		:align-items flex-end	
@@ -70,10 +84,15 @@ select
 		:font-weight bold
 		:text-align left
 		:cursor pointer
+		:margin-left 12px
+		:text-transform uppercase 
+		&:hover 
+			:text-decoration underline
 	.charity-selected-box
 		:height 200px
 		:width 200px
 		:position relative
+		:border 5px solid white
 		+display-for(sm xs)
 			:height 160px
 			:width 160px
@@ -103,6 +122,7 @@ select
 	.form-section
 		.wrapper--flex
 			:align-items flex-end
+			:margin-left 10px
 		.button--small
 			:padding 12px 20px
 		.field 
@@ -374,6 +394,8 @@ select
 				:margin-right 16px			
 .registrations form, 
 .form-event-details
+	p 
+		:font-size 1.4rem
 	input[type=checkbox] + label, 
 	input[type=radio] + label
 		:width 21px

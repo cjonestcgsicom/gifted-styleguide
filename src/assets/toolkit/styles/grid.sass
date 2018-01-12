@@ -147,10 +147,13 @@ $grid-base: 40
 				+make-column(40)
 		&--five
 			+make-column(8)
+			:width calc(20% - 0px)
+			&:nth-of-type(5n + 1)
+				:margin-right 0
 			+display-for(md)
-				+make-column(13.33)
+				+make-column(20)
 			+display-for(sm)
-				+make-column(13.33)
+				+make-column(20)
 			+display-for(xs)
 				+make-column(20)
 		&--six
