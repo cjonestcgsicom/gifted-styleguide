@@ -19,7 +19,7 @@ header.search-page--wrapper
 			:background white
 			:border none
 			:right 3px
-			:top 3px
+			:top 5px
 .search-empty 
 	:text-align center 
 	p 
@@ -32,6 +32,8 @@ header.search-page--wrapper
 		:background $panel-gray
 		:padding 10px 48px
 		:margin-bottom 4px
+		+display-for(sm xs)
+			:padding 10px 18px
 		a 
 			:color $font-black
 			:display flex
@@ -92,4 +94,7 @@ header.search-page--wrapper
 		:color $black
 		&:hover 
 			:color $pink		
-
+.contact-header	
+	:font-weight normal
+	:text-align center 
+	:margin-bottom 60px

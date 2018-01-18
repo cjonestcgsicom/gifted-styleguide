@@ -11,7 +11,7 @@
   // :transition 0.3s all ease
   :opcatiy 1 
   +display-for(sm xs)
-    :width 95%
+    :width 75%
     :padding 20px 20px 
   .wrapper 
     +display-for(sm xs)
@@ -59,12 +59,18 @@
 .guest-profile-modal
   :top 50%
   :max-width 45%
+  +display-for(sm xs)
+    :max-width 75%
   label 
     :width 20%
     :text-transform uppercase
     :font-weight bold
+    +display-for(sm xs)
+      :width 100%
   input, textarea 
     :width 60%
+    +display-for(sm xs)
+      :width 100%
   img 
     :padding-left 10px
   .guest-profile-wrapper
@@ -79,6 +85,8 @@
       :padding 10px 100px
   .short-input
     :width 30%
+    +display-for(sm xs)
+      :width 50%
   .long-input 
     :width 60%
     :display inline-block
@@ -86,6 +94,8 @@
     :padding 12px 
     :font-size 1.4rem
     :margin 0
+    +display-for(sm xs)
+      :width 100%
 
 .add-guest-modal, .add-contact-modal
   :max-width 977px
@@ -241,6 +251,7 @@
     p.note
       :font-size 1.2rem
       :text-align left
+      :display inline-block
     p  
       :width 100% 
       :font-size 1.4rem
@@ -264,7 +275,7 @@
   h2, p 
     :text-align center
   h2 
-    :color $pink
+    :color $font-black
     :font-size 1.8rem
   p 
     :font-size 1.4rem  
@@ -356,4 +367,10 @@ input.guest-list-messages-select-all
       :color white
       :font-weight bold 
       :font-style italic    
-  
+.sign-up-now
+  :background $pink
+  :padding 12px
+  :color white
+#guest-response-modal
+  button 
+    :font-size 1.2rem

@@ -183,7 +183,7 @@ nav.header
 			:display none
 	.nav--hamburger
 		:display block 
-		:padding 12px 18px
+		:padding 12px 0px
 		span
 			:width 32px 
 			:height 2px
@@ -380,7 +380,7 @@ nav.main-page
 			:padding-bottom 8px
 			:border-bottom 4px solid white
 			:cursor pointer
-			&:hover
+			&:hover, &:active
 				:border-bottom 4px solid $pink
 			+display-for(sm xs)
 				:width 100%
@@ -389,7 +389,7 @@ nav.main-page
 					:background-color $pink
 					a 
 						:color white
-		.tab-link.current, .form-option-link.current  
+		.tab-link.current, .form-option-link.current, .tab-link.active
 			:border-bottom 4px solid $pink	
 			+display-for(sm xs)
 				:border-bottom none
@@ -403,3 +403,31 @@ nav.main-page
 		:flex-direction column
 		span:last-of-type 
 			:order -1			
+.dropdown-title, .event-options-dropdown, .dropdown-title-contact, .add-contact-dropdown-title
+	:position relative
+	&:after
+		:content "˅"
+		:font-family -webkit-pictograph
+		:width 100%
+		:right -50px
+		:top 50%
+		:transform translateY(-50%)
+		:position absolute
+		:z-index -1
+		:display none
+		+display-for(sm xs)
+			:display block
+			:right -100px
+		
+.event-options-dropdown
+	&:after
+		+display-for(sm xs)
+			:right -120px
+.dropdown-title-contact
+	&:after
+		+display-for(sm xs)
+			:right -110px
+.add-contact-dropdown-title
+	&:after
+		+display-for(sm xs)
+			:right -155px

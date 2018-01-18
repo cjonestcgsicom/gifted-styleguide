@@ -110,8 +110,10 @@
 	input[type=range].colorized::-webkit-slider-thumb 
 		:appearance none
 		:height 38px
-		:width 38px
-		:background-image url('../../../assets/toolkit/images/slider_thumb_pink.svg')
+		:width 108px
+		:left 50px
+		:background transparent
+		// :background-image url('../../../assets/toolkit/images/slider_thumb_pink.svg')
 		:background-repeat no-repeat
 		:background-position center
 		:margin-top -12px
@@ -145,6 +147,7 @@
 	:border 2.5px solid $pink
 	:max-width 585px
 	:padding 15px 50px 30px 50px
+	:margin-left 30px
 	+display-for(sm xs)
 		:border none
 		:padding 15px 10px 30px 10px
@@ -337,6 +340,8 @@
 		:display none
 	.wrapper--flex
 		:align-items center
+	ul.wrapper--flex
+		:justify-content space-evenly
 		>span 
 			:text-transform uppercase	
 	span, ul 
@@ -365,7 +370,7 @@
 
 .modal.messages-modal
 	:width 95%
-	:max-width 1200px
+	// :max-width 1200px
 	:padding 20px 10px			
 .messages-modal
 	.wrapper--flex 
