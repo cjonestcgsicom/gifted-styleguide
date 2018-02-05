@@ -92,7 +92,7 @@ select
 		:font-weight bold
 		:text-align left
 		:cursor pointer
-		:margin-left 12px
+		:margin-left 14px
 		:text-transform uppercase 
 		&:hover 
 			:text-decoration underline
@@ -186,6 +186,13 @@ select
 
 .personalize-invite
 	:display flex
+	>div:first-of-type
+		p 
+			:margin-top 50px
+			:text-align center
+			:font-size 1.4rem
+			img 
+				:margin-left 10px	
 	+display-for(sm xs)
 		:display block
 	form
@@ -198,7 +205,7 @@ select
 	#area
 		:margin 0 auto
 		:margin-bottom 25px
-		:margin-top 50px
+		:margin-top 10px
 	.col--three
 		:text-align center
 
@@ -222,6 +229,7 @@ select
 		:margin-top 0
 	p.percentage_text 
 		:max-width 490px
+		:margin-bottom 12px 
 	p 
 		:font-size 1.2rem
 		:margin 0 auto
@@ -518,4 +526,9 @@ select
 		:width 100%
 .add-guest-button
 	:min-width 250px
-		
+#close-rsvp-modal-decline
+	:text-align right
+	:font-weight bold
+	:font-size 1.2rem
+	:display block
+	:margin -10px 30px 0
