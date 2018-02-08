@@ -1,8 +1,8 @@
 header.search-page--wrapper
-	:background-image url(../../../assets/toolkit/images/search_page_bg.jpg)
+	// :background-image url(../../../assets/toolkit/images/search_page_bg.jpg)
 	:background-repeat no-repeat
 	:background-size cover
-	:background-position center
+	:background-position center right
 	:padding 120px 0
 	h2 
 		:font-size 3.5rem
@@ -63,10 +63,15 @@ header.search-page--wrapper
 		img 
 			:display block						
 
-.charities--header
+.charities--header, .about-page--wrapper
 	:position relative
+	+display-for(sm xs)
+		:height 400px
 	img 
 		:width 100%
+		+display-for(sm xs)
+			:height 100%
+			:object-fit cover
 	.text-overlay 
 		:position absolute
 		:top 110px
@@ -98,3 +103,12 @@ header.search-page--wrapper
 	:font-weight normal
 	:text-align center 
 	:margin-bottom 60px
+.FAQ-wrapper
+	.main 
+		:color $pink
+		:font-size 1.8rem
+	.sub 
+		:font-size 1.4rem
+	p 	
+		:color $inactive-gray-font
+		:font-size 1.4rem
