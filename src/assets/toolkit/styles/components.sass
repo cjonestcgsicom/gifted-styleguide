@@ -51,10 +51,19 @@
 .button--pink
 	:background-color $pink 
 	:border 1px solid $pink 
-	:color white
+	:color white	
 	&:hover
 		:background-color white
 		:color $pink
+.button--attending
+	:cursor default 
+	:background-color $pink 
+	:border 1px solid $pink 
+	:color white
+.button--declined
+	:cursor default 
+	:background $inactive-gray				
+	:color $inactive-gray-font
 .button--pink-inverted
 	:background-color white	
 	:border 1px solid $pink
@@ -200,7 +209,7 @@
 	:position relative
 	.choices 
 		:position absolute
-		:bottom 28px
+		:bottom 100px
 		:left 50%
 		:transform translateX(-50%)
 		:width 100%
@@ -271,11 +280,20 @@
 	h3 
 		:margin-top 24px 
 	p 
-		:margin 100px 25% 120px 25% 
+		:margin 0 25% 12px 25% 
+		:text-align center
+
+		&:first-of-type 
+			:margin-top 100px
+		&:last-of-type
+			:margin-bottom 100px
+		a 
+			:text-decoration underline	
 		+display-for(sm xs)
 			:margin 20px
 			:font-size 1.2rem
 			:line-height 1.6
+
 		span 
 			:font-weight bold
 
@@ -373,6 +391,7 @@
 	// :max-width 1200px
 	:padding 20px 10px			
 .messages-modal
+
 	.wrapper--flex 
 		+display-for(sm xs)
 			:flex-wrap wrap
@@ -386,6 +405,13 @@
 				:width calc(50% - 10px)
 				&:first-of-type
 					:margin-right 20px
+	.send-message-modal-instructions
+		:font-weight bold
+		:text-align center				
+		h3 
+			:font-size 1.6rem
+		p 
+			:font-size 1.4rem	
 	.send-message-container
 		:background white
 		h3, h4		
