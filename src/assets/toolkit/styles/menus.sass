@@ -370,7 +370,7 @@ nav.main-page
 		:justify-content space-around
 		:padding 0
 		+display-for(sm xs)
-			:display none
+			// :display none
 			:padding 10px
 			:border 1px solid $inactive-gray-font
 		li
@@ -434,3 +434,6 @@ nav.main-page
 .faq-menu-wrapper
 	.tabs
 		:margin 60px 0
+		+display-for(sm xs)
+			:width 90%
+			:margin 0 auto
